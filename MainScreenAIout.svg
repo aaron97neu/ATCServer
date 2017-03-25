@@ -61,6 +61,10 @@
 	<text id="XMLID_41_" transform="matrix(0.9321 0 0 1 514.2695 293.4766)" class="st4 st8">Next plane</text>
 	<path id="XMLID_47_" class="st3" d="M551,331.9"/>
 	<path id="XMLID_46_" class="st3" d="M555.5,315"/>
+<ellipse onclick="clearLanding();" id="XMLID_43_" class="st3" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
+<ellipse onclick="clearTakeOff();" id="XMLID_42_" class="st3" cx="553.2" cy="151.2" rx="11.5" ry="11.2"/>
+<polyline onclick="nextPlane();" id="XMLID_45_" class="st3" points="558.5,325 558.5,332 582,318.5 558.5,304.9 558.5,311 558.5,311.5 529.5,311.5 
+529.5,325.5 558,325.5 "/>																																 
 </g>
 <g id="Paths">
 	<path id="XMLID_24_" class="st9" d="M82,259.5h292.9c0,0-162.7,0-0.1,0S393.8,413,393.8,413c-55.7,63-378.1,0-378.1,0"/>
@@ -104,5 +108,21 @@
 			c-0.4,0.4-0.8,0.6-1.4,0.6l-2.5,0c-0.8,0-2.4,0-2.4,0c-0.1,0-0.1,0-0.2,0.1c-0.7,1.3-4.2,7.6-4.2,7.6c-0.2,0.3-0.4,0.5-0.7,0.5
 			C83,269.6,82.8,269.6,82.7,269.6z"/>
 	</g>
+        <animateTransform attributeName="transform"
+                attributeType="XML"
+                type="translate"
+                from="0 0"
+                to="150 0"
+                begin="0s"
+                dur="2s"
+                repeatCount="indefinite"
+        />		  
 </g>
+<script src="buttons.js"></script>
+<script>
+var planesList = [];
+function clearTakeOff() { alert('Cleared for take off'); }
+function clearLanding() { alert('Cleared for landing'); }
+function nextPlane() { alert('Next Plane'); }
+</script>
 </svg>
