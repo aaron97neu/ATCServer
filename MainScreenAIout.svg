@@ -43,6 +43,7 @@
 	<path id="XMLID_14_" class="st3" d="M188.3,236.5c0,7.7,6.3,14,14,14"/>
 	<path id="XMLID_18_" class="st3" d="M138.4,250.5"/>
 	<path id="XMLID_17_" class="st3" d="M126.5,250.5"/>
+	<path id="XMLID_16_" class="st3" d="M140.5,236.5c0,3.3-3.2,6.1-8.4,7.4v0c-4.4-1.3-7.7-4.1-7.7-7.4"/>
 	<path id="XMLID_13_" class="st3" d="M76.6,236.5c0,7.7-6.3,14-14,14"/>
 	<path id="XMLID_3_" class="st0" d="M220.9,262.5"/>
 	<path id="XMLID_31_" class="st3" d="M924,466H515c-6.6,0-12-5.4-12-12V108c0-6.6,5.4-12,12-12h409c6.6,0,12,5.4,12,12v346
@@ -60,8 +61,6 @@
 	<text id="XMLID_41_" transform="matrix(0.9321 0 0 1 514.2695 293.4766)" class="st4 st8">Next plane</text>
 	<path id="XMLID_47_" class="st3" d="M551,331.9"/>
 	<path id="XMLID_46_" class="st3" d="M555.5,315"/>
-	<path id="XMLID_16_" class="st3" d="M140.5,236.5c0,4.2-3.6,7.5-8,7.5"/>
-	<path id="XMLID_45_" class="st3" d="M124.4,236.5c0,4.2,3.6,7.5,8.1,7.5"/>
 </g>
 <g id="Paths">
 	<path id="XMLID_24_" class="st9" d="M82,259.5h292.9c0,0-162.7,0-0.1,0S393.8,413,393.8,413c-55.7,63-378.1,0-378.1,0"/>
