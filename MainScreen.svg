@@ -52,7 +52,7 @@
 		to="150 0"
 		begin="0s"
 		dur="2s"
-		repeateCount="indefinite"
+		repeatCount="indefinite"
 	/>
 </path>
 </g>
