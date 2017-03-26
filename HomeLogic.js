@@ -1,6 +1,5 @@
 
 				var time;
-				var colorTimer = setInterval(colors, 5);
 				var i = 0;
 				var x = 0;
 				var y = 0;
@@ -18,16 +17,7 @@
 					document.getElementById("Incoming"+j).innerHTML = incomingList[j].name;
 				}
 				var names = ["Delta", "American", "United", "JetBlue", "Southwest", "Frontier", "Hack", "Alaska", "Spirit"];
-				function colors() {
-					for(var l = 0; l < incomingList.length; l++) {
-						if(l == i) {
-							document.getElementById("Incoming"+l).color = "#ff8717";
-						} else {
-							document.getElementById("Incoming"+l).color = "#000";
-						}
-							
-					}
-				}
+				
 				function addPlane() {
 					if(incomingList.length < 10) {
 						var name = names[Math.floor(Math.random() * names.length)];
