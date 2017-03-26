@@ -54,7 +54,25 @@
 	<line id="XMLID_35_" class="st3" x1="608.5" y1="96" x2="608.5" y2="466"/>
 	<line id="XMLID_36_" class="st3" x1="827.5" y1="95" x2="827.5" y2="466"/>
 	<text id="XMLID_27_" transform="matrix(0.9257 0 0 1 612.5479 112.3332)" class="st4 st5">Clear to take off</text>
+	<text id="TakeOff0" transform="matrix(1 0 0 1 650 138.0)" class="st4 st5"></text>
+	<text id="TakeOff1" transform="matrix(1 0 0 1 650 168.0)" class="st4 st5"></text>
+	<text id="TakeOff2" transform="matrix(1 0 0 1 650 198.0)" class="st4 st5"></text>
+	<text id="TakeOff3" transform="matrix(1 0 0 1 650 228.0)" class="st4 st5"></text>
+	<text id="TakeOff4" transform="matrix(1 0 0 1 650 258.0)" class="st4 st5"></text>
+	<text id="TakeOff5" transform="matrix(1 0 0 1 650 288.0)" class="st4 st5"></text>
+	<text id="TakeOff6" transform="matrix(1 0 0 1 650 318.0)" class="st4 st5"></text>
+	<text id="TakeOff7" transform="matrix(1 0 0 1 650 348.0)" class="st4 st5"></text>
+	<text id="TakeOff8" transform="matrix(1 0 0 1 650 378.0)" class="st4 st5"></text>
 	<text id="XMLID_29_" transform="matrix(1 0 0 1 728.9134 112.3332)" class="st4 st5">Clear to load</text>
+	<text id="Load0" transform="matrix(1 0 0 1 760 138.0)" class="st4 st5"></text>
+	<text id="Load1" transform="matrix(1 0 0 1 760 168.0)" class="st4 st5"></text>
+	<text id="Load2" transform="matrix(1 0 0 1 760 198.0)" class="st4 st5"></text>
+	<text id="Load3" transform="matrix(1 0 0 1 760 228.0)" class="st4 st5"></text>
+	<text id="Load4" transform="matrix(1 0 0 1 760 258.0)" class="st4 st5"></text>
+	<text id="Load5" transform="matrix(1 0 0 1 760 288.0)" class="st4 st5"></text>
+	<text id="Load6" transform="matrix(1 0 0 1 760 318.0)" class="st4 st5"></text>
+	<text id="Load7" transform="matrix(1 0 0 1 760 348.0)" class="st4 st5"></text>
+	<text id="Load8" transform="matrix(1 0 0 1 760 378.0)" class="st4 st5"></text>
 	<line id="XMLID_30_" class="st3" x1="503" y1="387.5" x2="608" y2="387.5"/>
 	<text id="XMLID_37_" transform="matrix(1 0 0 1 509.9805 405.6664)" class="st4 st5">Current Plane</text>
 	<text id="XMLID_38_" transform="matrix(1 0 0 1 847.8835 112.3332)" class="st4 st5">Incoming</text>
@@ -111,19 +129,22 @@
 			C83,269.6,82.8,269.6,82.7,269.6z"/>
 	</g>
 	<text id="CurrentPlane" transform="matrix(1 0 0 1 517.9805	437.0)" class="st4 st5">M9</text>
-	<text id="Planes0" transform="matrix(1 0 0 1 859.8835	138.0)" class="st4 st5"></text>
-	<text id="Planes1" transform="matrix(1 0 0 1 859.8835	168.0)" class="st4 st5"></text>
-	<text id="Planes2" transform="matrix(1 0 0 1 859.8835	198.0)" class="st4 st5"></text>
-	<text id="Planes3" transform="matrix(1 0 0 1 859.8835	228.0)" class="st4 st5"></text>
-	<text id="Planes4" transform="matrix(1 0 0 1 859.8835	258.0)" class="st4 st5"></text>
-	<text id="Planes5" transform="matrix(1 0 0 1 859.8835	288.0)" class="st4 st5"></text>
-	<text id="Planes6" transform="matrix(1 0 0 1 859.8835	318.0)" class="st4 st5"></text>
-	<text id="Planes7" transform="matrix(1 0 0 1 859.8835	348.0)" class="st4 st5"></text>
-	<text id="Planes8" transform="matrix(1 0 0 1 859.8835	378.0)" class="st4 st5"></text>
-	<text id="Planes9" transform="matrix(1 0 0 1 859.8835	408.0)" class="st4 st5"></text>
-	<text id="Planes10" transform="matrix(1 0 0 1 859.8835	438.0)" class="st4 st5"></text>
+	
 	<text id="XMLID_38_" transform="matrix(1 0 0 1 847.8835 112.3332)" class="st4 st5">Incoming</text>
+	<text id="Incoming0" transform="matrix(1 0 0 1 859.8835	138.0)" class="st4 st5"></text>
+	<text id="Incoming1" transform="matrix(1 0 0 1 859.8835	168.0)" class="st4 st5"></text>
+	<text id="Incoming2" transform="matrix(1 0 0 1 859.8835	198.0)" class="st4 st5"></text>
+	<text id="Incoming3" transform="matrix(1 0 0 1 859.8835	228.0)" class="st4 st5"></text>
+	<text id="Incoming4" transform="matrix(1 0 0 1 859.8835	258.0)" class="st4 st5"></text>
+	<text id="Incoming5" transform="matrix(1 0 0 1 859.8835	288.0)" class="st4 st5"></text>
+	<text id="Incoming6" transform="matrix(1 0 0 1 859.8835	318.0)" class="st4 st5"></text>
+	<text id="Incoming7" transform="matrix(1 0 0 1 859.8835	348.0)" class="st4 st5"></text>
+	<text id="Incoming8" transform="matrix(1 0 0 1 859.8835	378.0)" class="st4 st5"></text>
+	<text id="Incoming9" transform="matrix(1 0 0 1 859.8835	408.0)" class="st4 st5"></text>
+	<text id="Incoming10" transform="matrix(1 0 0 1 859.8835 438.0)" class="st4 st5"></text>
+	
 	<text id="XMLID_39_" transform="matrix(1 0 0 1 507.9063 130.6973)" class="st4 st6">Clear for take off</text>
+
 	<text id="XMLID_40_" transform="matrix(1 0 0 1 508.3027 179.7203)" class="st4 st7">Clear for landing</text>
 	<text id="XMLID_41_" transform="matrix(1 0 0 1 514.2698 292.5)" class="st4 st5">Next plane</text>
 	<path id="XMLID_47_" class="st3" d="M551.3,329.5"/>
@@ -165,21 +186,54 @@
         />		  
 </g>
 <script type="text/javascript"><![CDATA[
+
+var time = setInterval(update, 1000);
 var i = 0
-var planesList = ["M9", "MLH", "C8", "C7", "M8", "333", "111", "C1", "C4"];
-var j;
-for(j = 0; j < planesList.length; j++) {
-	document.getElementById("Planes"+j).innerHTML = planesList[j];
+var x = 0;
+var numsAdded = 0;
+var currentPlane = "M9";
+var incomingList = ["M9", "MLH", "C8", "C7", "M8", "333", "111", "C1", "C4"];
+var messages = []
+var takeOffList = [];
+for(j = 0; j < incomingList.length; j++) {
+	document.getElementById("Incoming"+j).innerHTML = incomingList[j];
 }
-function clearTakeOff() { alert('Cleared for take off'); }
+var names = ["Delta", "American", "United", "JetBlue", "Southwest", "Frontier", "Hack", "Alaska"];
+
+function update()
+{
+	
+
+
+}
+function clearTakeOff() { 
+	console.log('take off');
+	var k = i;
+	for(; k < incomingList.length-1; k++) {
+		document.getElementById("Incoming"+k).innerHTML = incomingList[k+1];
+	}
+	
+	document.getElementById("Incoming"+k).innerHTML = "";
+		var takeoff = incomingList.splice(i, 1);
+	if(i == incomingList.length)
+		document.getElementById("CurrentPlane").innerHTML = incomingList[i-1];
+	else
+		document.getElementById("CurrentPlane").innerHTML = incomingList[i];
+
+	
+	document.getElementById("TakeOff"+x).innerHTML = takeoff;
+	takeOffList.push(takeoff);
+	x++;
+ }
 function clearLanding() { alert('Cleared for landing'); }
 function nextPlane() { 
 	console.log('Next plane');
-	if(i == planesList.length-1)
+	if(i == incomingList.length-1)
 		i = 0;
 	else
 		i++;
-	document.getElementById("CurrentPlane").innerHTML = planesList[i];
+	currentPlane = incomingList[i];
+	document.getElementById("CurrentPlane").innerHTML = incomingList[i];
 }
 ]]></script>
 </svg>
