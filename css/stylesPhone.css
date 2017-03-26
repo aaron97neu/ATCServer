@@ -941,7 +941,7 @@ Nav Overlay
 }
 .overlay ul li a {
     display: block;
-    padding: 50px 0;
+    padding: 10px 10px;
     min-width: 190px;
     border: 2px solid #fff;
     border-radius: 3px;
