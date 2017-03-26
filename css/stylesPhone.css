@@ -845,7 +845,8 @@ Screenshots
     text-transform: uppercase;
 	font-size: 10px;
     font-weight: 400;
-	text-wrap: unrestricted;
+	width: 100px;
+	margin-left: 50px;
 }
 .screenshots figcaption .caption-content {
     position: absolute;
