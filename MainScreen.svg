@@ -79,6 +79,7 @@
 	<text id="XMLID_39_" transform="matrix(1 0 0 1 507.9063 130.6973)" class="st4 st6">Clear for take off</text>
 	<text id="XMLID_40_" transform="matrix(1 0 0 1 508.3027 179.7203)" class="st4 st7">Clear for landing</text>
 	<text id="XMLID_41_" transform="matrix(0.9321 0 0 1 514.2695 293.4766)" class="st4 st8">Next plane</text>
+	<text id="Message" transform="matrix(1 0 0 1 615 280)" class="st4 st5">M9 is seeking clearance to land!</text>
 	<path id="XMLID_47_" class="st3" d="M551,331.9"/>
 	<path id="XMLID_46_" class="st3" d="M555.5,315"/>
 <ellipse onclick="clearLanding();" id="XMLID_43_" class="st3" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
@@ -203,7 +204,7 @@ var names = ["Delta", "American", "United", "JetBlue", "Southwest", "Frontier", 
 
 function addPlane() {
 	if(incomingList.length != 10) {
-		var name = names[Math.floor(Math.random() * 8)+1];
+		var name = names[Math.floor(Math.random() * names.length)];
 		name += " " +(Math.floor(Math.random()*999)+1);
 		var rand = (Math.floor(Math.random()*2))
 		var message;
