@@ -129,14 +129,18 @@ function addPlane() {
 		lose();
 	}
 }
-
-for(var c = 0; c < 4; c++) {
 	addPlane();
-}
 
-function lose() {
+				function lose() {
+					clearInterval(time);
+					for(var c = 0; c < incomingList.length; c++) {
+						document.getElementById("Incoming"+c)).innerHTML = "";
+						document.getElementById("Message"+c).innerHTML = "";
+					}
+					
+					
+				}
 
-}
 
 function update()
 {
