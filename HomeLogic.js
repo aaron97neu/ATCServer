@@ -87,7 +87,7 @@ textBox1.addEventListener('click', async function() //start listening to clicks 
                 { 
                     //display new screen
                     gameSVG.setAttribute("visibility", "visible");
-                    homeSVG.setAttribute("visibility", "hidden");
+                    //homeSVG.setAttribute("visibility", "hidden");
 
                 }, false);
             }, false);
