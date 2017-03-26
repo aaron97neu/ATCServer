@@ -870,6 +870,11 @@ Footer
 footer {
     padding: 100px 0
 }
+
+footer img {
+	text-align: center;
+}
+
 footer p {
 	/* footer text color */
     color: #c7cacc;
