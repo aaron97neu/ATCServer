@@ -192,36 +192,64 @@ var i = 0
 var x = 0;
 var numsAdded = 0;
 var currentPlane = "M9";
-var incomingList = ["M9", "MLH", "C8", "C7", "M8", "333", "111", "C1", "C4"];
+var incomingList = [{name: "M9", message: "M9 is seeking clearance to land!"}]
 var messages = []
+
 var takeOffList = [];
 for(j = 0; j < incomingList.length; j++) {
-	document.getElementById("Incoming"+j).innerHTML = incomingList[j];
+	document.getElementById("Incoming"+j).innerHTML = incomingList[j].name;
 }
-var names = ["Delta", "American", "United", "JetBlue", "Southwest", "Frontier", "Hack", "Alaska"];
+var names = ["Delta", "American", "United", "JetBlue", "Southwest", "Frontier", "Hack", "Alaska", "Spirit"];
+
+function addPlane() {
+	if(incomingList.length != 10) {
+		var name = names[Math.floor(Math.random() * 8)+1];
+		name += " " +(Math.floor(Math.random()*999)+1);
+		var rand = (Math.floor(Math.random()*2))
+		var message;
+		if(rand == 0)
+			message = name + " is seeking clearance to land!";
+		else
+			message = name + " is seeking clearance to take off!";
+		incomingList.push({name: name, message: message});
+		document.getElementById("Incoming"+(incomingList.length-1)).innerHTML = name;
+	} else {
+		lose();
+	}
+}
+
+for(var c = 0; c < 4; c++) {
+	addPlane();
+}
+
+function lose() {
+
+}
 
 function update()
 {
-	
-
+	var num = (Math.floor(Math.random()*100))
+	if(num <= 30) {
+		addPlane();	
+	}
 
 }
 function clearTakeOff() { 
 	console.log('take off');
 	var k = i;
 	for(; k < incomingList.length-1; k++) {
-		document.getElementById("Incoming"+k).innerHTML = incomingList[k+1];
+		document.getElementById("Incoming"+k).innerHTML = incomingList[k+1].name;
 	}
 	
 	document.getElementById("Incoming"+k).innerHTML = "";
 		var takeoff = incomingList.splice(i, 1);
 	if(i == incomingList.length)
-		document.getElementById("CurrentPlane").innerHTML = incomingList[i-1];
+		document.getElementById("CurrentPlane").innerHTML = incomingList[i-1].name;
 	else
-		document.getElementById("CurrentPlane").innerHTML = incomingList[i];
+		document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
 
-	
-	document.getElementById("TakeOff"+x).innerHTML = takeoff;
+	console.log(takeoff);
+	document.getElementById("TakeOff"+x).innerHTML = takeoff[0].name;
 	takeOffList.push(takeoff);
 	x++;
  }
@@ -233,7 +261,7 @@ function nextPlane() {
 	else
 		i++;
 	currentPlane = incomingList[i];
-	document.getElementById("CurrentPlane").innerHTML = incomingList[i];
+	document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
 }
 ]]></script>
 </svg>
