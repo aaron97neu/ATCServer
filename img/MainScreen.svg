@@ -130,7 +130,7 @@
 			<text id="Error" transform="matrix(1 0 0 1 612.5469 445.3877)" class="st4 st10">An error message will go here.</text>
 			<script  type="text/javascript">
 				<![CDATA[
-				var time = setInterval(update, 1500);
+				var time = setInterval(update, 1000);
 				var i = 0;
 				var x = 0;
 				var y = 0;
@@ -160,6 +160,10 @@
 							message = name + " is seeking clearance to take off!";
 							land = false;
 						}
+						if(incomingList.length == 0) {
+							document.getElementById("CurrentPlane").innerHTML = name;
+						}
+							
 						incomingList.push({name: name, message: message, land: land});
 						document.getElementById("Incoming"+(incomingList.length-1)).innerHTML = name;
 						document.getElementById("Message"+(incomingList.length-1)).innerHTML = message;
@@ -171,7 +175,7 @@
 				addPlane();
 
 				function lose() {
-
+					clearInterval(time);
 				}
 
 				function update()
@@ -191,62 +195,99 @@
 				}
 				
 				function takeoff() {
-				
+					if(takeOffList.length == 2) {
+						takeOffList.splice(0, 1);
+						document.getElementById("TakeOff0").innerHTML = takeOffList[0].name;
+						document.getElementById("TakeOff1").innerHTML = "";
+						x=1;
+					} else {
+						takeOffList.splice(0, 1);
+						document.getElementById("TakeOff0").innerHTML = "";
+						x=0
+					}
 				}
 				function land() {
-				
+					if(landList.length == 2) {
+						landList.splice(0, 1);
+						document.getElementById("Land0").innerHTML = landList[0].name
+						document.getElementById("Land1").innerHTML = "";
+						y = 1;
+					} else {
+						console.log(landList.length);
+						landList.splice(0, 1);
+						document.getElementById("Land0").innerHTML = "";
+						y = 0;
+					}
 				}
 				function clearTakeOff() { 
+				if(incomingList.length != 0) {
 					if(incomingList[i].land == false) {
 						if(x < 2) {
-							var k = i;
-							for(; k < incomingList.length-1; k++) {
-								document.getElementById("Incoming"+k).innerHTML = incomingList[k+1].name;
-								document.getElementById("Message"+k).innerHTML = incomingList[k+1].message;
-							}
-							
-							document.getElementById("Incoming"+k).innerHTML = "";
-							var takeoff = incomingList.splice(i, 1);
-							if(i == incomingList.length)
-								document.getElementById("CurrentPlane").innerHTML = incomingList[i-1].name;
-							else
-								document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
+								var k = i;
+								for(; k < incomingList.length-1; k++) {
+									document.getElementById("Incoming"+k).innerHTML = incomingList[k+1].name;
+									document.getElementById("Message"+k).innerHTML = incomingList[k+1].message;
+								}
+								document.getElementById("Message"+k).innerHTML = "";
+								document.getElementById("Incoming"+k).innerHTML = "";
+								var takeoff = incomingList.splice(i, 1);
+								if(i == incomingList.length) {
+									if(i != 0)
+										document.getElementById("CurrentPlane").innerHTML = incomingList[i-1].name;
+									else
+										document.getElementById("CurrentPlane").innerHTML = "";
+								}
+								else
+									document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
 
-							console.log(takeoff);
-							document.getElementById("TakeOff"+x).innerHTML = takeoff[0].name;
-							takeOffList.push(takeoff[0]);
-							x++;
+								console.log(takeoff);
+								document.getElementById("TakeOff"+x).innerHTML = takeoff[0].name;
+								takeOffList.push(takeoff[0]);
+								x++;
 						} else {
 							document.getElementById("Error").innerHTML = "All runways for takeoff are in use!";
 						}
 					} else {
 						document.getElementById("Error").innerHTML = "This plane does not need to take off!";
 					}
-				 }
+				} else {
+					document.getElementById("Error").innerHTML = "You do not have a plane selected!";
+				}
+					
+				}
 				function clearLanding() { 
+				if(incomingList.length != 0) {
 					if(incomingList[i].land == true) {
 						if(y < 2) {
-							var k = i;
-							for(; k < incomingList.length-1; k++) {
-								document.getElementById("Incoming"+k).innerHTML = incomingList[k+1].name;
-								document.getElementById("Message"+k).innerHTML = incomingList[k+1].message;
-							}
-							
-							document.getElementById("Incoming"+k).innerHTML = "";
-							var landing = incomingList.splice(i, 1);
-							if(i == incomingList.length)
-								document.getElementById("CurrentPlane").innerHTML = incomingList[i-1].name;
-							else
-								document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
+								var k = i;
+								for(; k < incomingList.length-1; k++) {
+									document.getElementById("Incoming"+k).innerHTML = incomingList[k+1].name;
+									document.getElementById("Message"+k).innerHTML = incomingList[k+1].message;
+								}
+								
+								document.getElementById("Message"+k).innerHTML = "";
+								document.getElementById("Incoming"+k).innerHTML = "";
+								var landing = incomingList.splice(i, 1);
+								if(i == incomingList.length) {
+									if(i != 0)
+										document.getElementById("CurrentPlane").innerHTML = incomingList[i-1].name;
+									else
+										document.getElementById("CurrentPlane").innerHTML = "";
+								}
+								else
+									document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
 
-							document.getElementById("Land"+y).innerHTML = landing[0].name;
-							landList.push(landing[0]);
-							y++;
+								document.getElementById("Land"+y).innerHTML = landing[0].name;
+								landList.push(landing[0]);
+								y++;
 						} else {
 							document.getElementById("Error").innerHTML = "All runways for landing are in use!";
 						}
 					} else {
 						document.getElementById("Error").innerHTML = "This plane does not need to take off!";
+					}
+					} else {
+						document.getElementById("Error").innerHTML = "You do not have a plane selected!";
 					}
 				}
 				function nextPlane() { 
