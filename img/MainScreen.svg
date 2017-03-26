@@ -144,7 +144,7 @@
 				function start() {
 					time = setInterval(update, 1000);
 				}
-				
+				start();
 				var takeOffList = [];
 				var landList = [];
 				for(j = 0; j < incomingList.length; j++) {
