@@ -734,7 +734,9 @@ Showcase
 	font-size: 20px;
     color: #f6f7f9;
 }
-
+.showcases img {
+	margin: 0 0 0 0;
+}
 .showcase-wrap {
     position: relative;
     padding: 100px 0;
