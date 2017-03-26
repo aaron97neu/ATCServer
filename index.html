@@ -24,7 +24,7 @@
 		<link href="css/stylesPhone.css" rel="stylesheet" type="text/css" media="all and (min-width: 0px) and (max-width: 480px)" />
 		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all and (min-width:481px)">
 		
-		
+		<script type="text/javascript" src="js/sound-mouseover.js"></script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -124,11 +124,8 @@
 			<div class="showcase-wrap">
 				<div class="container">
 					<div class="row">
-						<div>
+						<div onmouseover="playclip();" onmouseout="pauseclip();">
 							<object type="image/svg+xml" data="img/screen.svg"></object>
-							<video autoplay="" name="">
-								<source src="http://s1.ord.liveatc.net/katl_atis_arr" type="audio/mpeg">
-							</video>
 						</div>
 					</div>
 				</div>
@@ -292,7 +289,10 @@
 				</ul>
 			</nav>
 		</div>
-		
+		<video name="audio" id="audio">
+			<source src="http://s1.ord.liveatc.net/katl_atis_arr" type="audio/mpeg">
+		</video>
+		<div id="sounddiv"><bgsound id="sound"></div>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/min/toucheffects-min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
