@@ -84,8 +84,26 @@
 			<text id="XMLID_54_" transform="matrix(1 0 0 1 847.8835 112.3332)" class="st4 st5">Incoming</text>
 			<line class="st9" x1="608.5" y1="179.7" x2="827.5" y2="179.7"/>
 		</g>
+		<g id="Buttons_1_">
+			<ellipse id="XMLID_33_" onclick="clearTakeOff();" class="st11" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
+			<ellipse id="XMLID_50_" onclick="clearLanding();" class="st11" cx="553.2" cy="151.2" rx="11.5" ry="11.2"/>
+			<g id="XMLID_65_">
+				<polyline id="XMLID_67_" onclick="nextPlane();" class="st11" points="560.2,335.9 526.3,335.9 526.3,318.8 560.2,318.8 				"/>
+				<path id="XMLID_66_" onclick="nextPlane();" class="st11" d="M560.2,318.8c0-2.2,0-4.3,0-6.5c7.5,4.4,15.1,8.7,22.6,13.1c1.1,0.6,2.2,1.3,3.3,1.9
+					c-7.5,4.4-15.1,8.7-22.6,13.1c-1.1,0.6-2.2,1.3-3.3,1.9c0-2.2,0-4.4,0-6.6"/>
+		</g>
+		</g>
 		<g id="Var_Text">
-			<text id="Message" transform="matrix(1 0 0 1 612.5479 193.7)" class="st4 st10">M9 is seeking clearance to land!</text>
+				<text id="Message0" transform="matrix(1 0 0 1 612.5469 272.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message1" transform="matrix(1 0 0 1 612.5469 387.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message2" transform="matrix(1 0 0 1 612.5469 402.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message3" transform="matrix(1 0 0 1 612.5469 417.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message4" transform="matrix(1 0 0 1 612.5469 432.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message5" transform="matrix(1 0 0 1 612.5469 447.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message6" transform="matrix(1 0 0 1 612.5469 462.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message7" transform="matrix(1 0 0 1 612.5469 477.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message8" transform="matrix(1 0 0 1 612.5469 492.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message9" transform="matrix(1 0 0 1 612.5469 507.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
 			<path id="XMLID_47_" class="st3" d="M551,331.9"/>
 			<path id="XMLID_46_" class="st3" d="M555.5,315"/>
 			<ellipse id="XMLID_43_" onclick="clearLanding();" class="st3" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
@@ -95,25 +113,44 @@
 			<path id="XMLID_62_" class="st3" d="M555.5,315"/>
 			<ellipse id="XMLID_63_" onclick="clearLanding();" class="st3" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
 			<ellipse id="XMLID_64_" onclick="clearTakeOff();" class="st3" cx="553.2" cy="151.2" rx="11.5" ry="11.2"/>
+			<text id="Load0" transform="matrix(1 0 0 1 760 138.0)" class="st4 st5"></text>
+			<text id="Load1" transform="matrix(1 0 0 1 760 168.0)" class="st4 st5"></text>
+			<text id="Load2" transform="matrix(1 0 0 1 760 198.0)" class="st4 st5"></text>
+			<text id="Load3" transform="matrix(1 0 0 1 760 228.0)" class="st4 st5"></text>
+			<text id="TakeOff0" transform="matrix(1 0 0 1 625 138.0)" class="st4 st5"></text>
+			<text id="TakeOff1" transform="matrix(1 0 0 1 625 168.0)" class="st4 st5"></text>
+			<text id="TakeOff2" transform="matrix(1 0 0 1 625 198.0)" class="st4 st5"></text>
+			<text id="TakeOff3" transform="matrix(1 0 0 1 625 228.0)" class="st4 st5"></text>
+			<text id="Incoming0" transform="matrix(1 0 0 1 840.8835	138.0)" class="st4 st5"></text>
+			<text id="Incoming1" transform="matrix(1 0 0 1 840.8835	168.0)" class="st4 st5"></text>
+			<text id="Incoming2" transform="matrix(1 0 0 1 840.8835	198.0)" class="st4 st5"></text>
+			<text id="Incoming3" transform="matrix(1 0 0 1 840.8835	228.0)" class="st4 st5"></text>
+			<text id="Incoming4" transform="matrix(1 0 0 1 840.8835	258.0)" class="st4 st5"></text>
+			<text id="Incoming5" transform="matrix(1 0 0 1 840.8835	288.0)" class="st4 st5"></text>
+			<text id="Incoming6" transform="matrix(1 0 0 1 840.8835	318.0)" class="st4 st5"></text>
+			<text id="Incoming7" transform="matrix(1 0 0 1 840.8835	348.0)" class="st4 st5"></text>
+			<text id="Incoming8" transform="matrix(1 0 0 1 840.8835	378.0)" class="st4 st5"></text>
+			<text id="Incoming9" transform="matrix(1 0 0 1 840.8835	408.0)" class="st4 st5"></text>
+			<text id="Error" transform="matrix(1 0 0 1 612.5469 445.3877)" class="st4 st10">An error message will go here.</text>
 			<script  type="text/javascript">
-				<![CDATA[
-
-var time = setInterval(update, 1000);
-var i = 0
+			<![CDATA[
+				var time = setInterval(update, 1000);
+var i = 0;
 var x = 0;
+var y = 0;
 var numsAdded = 0;
 var currentPlane = "M9";
 var incomingList = [{name: "M9", message: "M9 is seeking clearance to land!"}]
-var messages = []
 
 var takeOffList = [];
+var landList = [];
 for(j = 0; j < incomingList.length; j++) {
 	document.getElementById("Incoming"+j).innerHTML = incomingList[j].name;
 }
 var names = ["Delta", "American", "United", "JetBlue", "Southwest", "Frontier", "Hack", "Alaska", "Spirit"];
 
 function addPlane() {
-	if(incomingList.length != 10) {
+	if(incomingList.length < 10) {
 		var name = names[Math.floor(Math.random() * names.length)];
 		name += " " +(Math.floor(Math.random()*999)+1);
 		var rand = (Math.floor(Math.random()*2))
@@ -147,24 +184,49 @@ function update()
 }
 function clearTakeOff() { 
 	console.log('take off');
-	var k = i;
-	for(; k < incomingList.length-1; k++) {
-		document.getElementById("Incoming"+k).innerHTML = incomingList[k+1].name;
-	}
-	
-	document.getElementById("Incoming"+k).innerHTML = "";
-		var takeoff = incomingList.splice(i, 1);
-	if(i == incomingList.length)
-		document.getElementById("CurrentPlane").innerHTML = incomingList[i-1].name;
-	else
-		document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
+	if(x < 2) {
+		var k = i;
+		for(; k < incomingList.length-1; k++) {
+			document.getElementById("Incoming"+k).innerHTML = incomingList[k+1].name;
+		}
+		
+		document.getElementById("Incoming"+k).innerHTML = "";
+			var takeoff = incomingList.splice(i, 1);
+		if(i == incomingList.length)
+			document.getElementById("CurrentPlane").innerHTML = incomingList[i-1].name;
+		else
+			document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
 
-	console.log(takeoff);
-	document.getElementById("TakeOff"+x).innerHTML = takeoff[0].name;
-	takeOffList.push(takeoff);
-	x++;
+		console.log(takeoff);
+		document.getElementById("TakeOff"+x).innerHTML = takeoff[0].name;
+		takeOffList.push(takeoff[0]);
+		x++;
+	} else {
+		document.getElementById("Error").innerHTML = "All runways for takeoff are in use!";
+	}
  }
-function clearLanding() { alert('Cleared for landing'); }
+function clearLanding() { 
+	console.log('take off');
+	if(y < 2) {
+		var k = i;
+		for(; k < incomingList.length-1; k++) {
+			document.getElementById("Incoming"+k).innerHTML = incomingList[k+1].name;
+		}
+		
+		document.getElementById("Incoming"+k).innerHTML = "";
+		var landing = incomingList.splice(i, 1);
+		if(i == incomingList.length)
+			document.getElementById("CurrentPlane").innerHTML = incomingList[i-1].name;
+		else
+			document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
+
+		document.getElementById("Land"+y).innerHTML = landing[0].name;
+		landList.push(landing[0]);
+		x++;
+	} else {
+		document.getElementById("Error").innerHTML = "All runways for landing are in use!";
+	}
+}
 function nextPlane() { 
 	console.log('Next plane');
 	if(i == incomingList.length-1)
@@ -177,15 +239,6 @@ function nextPlane() {
 
 					]]>
 			</script>
-		</g>
-		<g id="Buttons_1_">
-			<ellipse id="XMLID_33_" class="st11" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
-			<ellipse id="XMLID_50_" class="st11" cx="553.2" cy="151.2" rx="11.5" ry="11.2"/>
-			<g id="XMLID_65_">
-				<polyline id="XMLID_67_" class="st11" points="560.2,335.9 526.3,335.9 526.3,318.8 560.2,318.8 				"/>
-				<path id="XMLID_66_" class="st11" d="M560.2,318.8c0-2.2,0-4.3,0-6.5c7.5,4.4,15.1,8.7,22.6,13.1c1.1,0.6,2.2,1.3,3.3,1.9
-					c-7.5,4.4-15.1,8.7-22.6,13.1c-1.1,0.6-2.2,1.3-3.3,1.9c0-2.2,0-4.4,0-6.6"/>
-			</g>
 		</g>
 		<g id="Paths_1_">
 			<line class="st12" x1="15.7" y1="413" x2="-48" y2="399"/>
