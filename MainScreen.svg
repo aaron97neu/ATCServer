@@ -79,6 +79,7 @@
 	<text id="XMLID_39_" transform="matrix(1 0 0 1 507.9063 130.6973)" class="st4 st6">Clear for take off</text>
 	<text id="XMLID_40_" transform="matrix(1 0 0 1 508.3027 179.7203)" class="st4 st7">Clear for landing</text>
 	<text id="XMLID_41_" transform="matrix(0.9321 0 0 1 514.2695 293.4766)" class="st4 st8">Next plane</text>
+	<text id="Message" transform="matrix(1 0 0 1 615 280)" class="st4 st5">M9 is seeking clearance to land!</text>
 	<path id="XMLID_47_" class="st3" d="M551,331.9"/>
 	<path id="XMLID_46_" class="st3" d="M555.5,315"/>
 <ellipse onclick="clearLanding();" id="XMLID_43_" class="st3" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
@@ -192,36 +193,64 @@ var i = 0
 var x = 0;
 var numsAdded = 0;
 var currentPlane = "M9";
-var incomingList = ["M9", "MLH", "C8", "C7", "M8", "333", "111", "C1", "C4"];
+var incomingList = [{name: "M9", message: "M9 is seeking clearance to land!"}]
 var messages = []
+
 var takeOffList = [];
 for(j = 0; j < incomingList.length; j++) {
-	document.getElementById("Incoming"+j).innerHTML = incomingList[j];
+	document.getElementById("Incoming"+j).innerHTML = incomingList[j].name;
 }
-var names = ["Delta", "American", "United", "JetBlue", "Southwest", "Frontier", "Hack", "Alaska"];
+var names = ["Delta", "American", "United", "JetBlue", "Southwest", "Frontier", "Hack", "Alaska", "Spirit"];
+
+function addPlane() {
+	if(incomingList.length != 10) {
+		var name = names[Math.floor(Math.random() * names.length)];
+		name += " " +(Math.floor(Math.random()*999)+1);
+		var rand = (Math.floor(Math.random()*2))
+		var message;
+		if(rand == 0)
+			message = name + " is seeking clearance to land!";
+		else
+			message = name + " is seeking clearance to take off!";
+		incomingList.push({name: name, message: message});
+		document.getElementById("Incoming"+(incomingList.length-1)).innerHTML = name;
+	} else {
+		lose();
+	}
+}
+
+for(var c = 0; c < 4; c++) {
+	addPlane();
+}
+
+function lose() {
+
+}
 
 function update()
 {
-	
-
+	var num = (Math.floor(Math.random()*100))
+	if(num <= 30) {
+		addPlane();	
+	}
 
 }
 function clearTakeOff() { 
 	console.log('take off');
 	var k = i;
 	for(; k < incomingList.length-1; k++) {
-		document.getElementById("Incoming"+k).innerHTML = incomingList[k+1];
+		document.getElementById("Incoming"+k).innerHTML = incomingList[k+1].name;
 	}
 	
 	document.getElementById("Incoming"+k).innerHTML = "";
 		var takeoff = incomingList.splice(i, 1);
 	if(i == incomingList.length)
-		document.getElementById("CurrentPlane").innerHTML = incomingList[i-1];
+		document.getElementById("CurrentPlane").innerHTML = incomingList[i-1].name;
 	else
-		document.getElementById("CurrentPlane").innerHTML = incomingList[i];
+		document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
 
-	
-	document.getElementById("TakeOff"+x).innerHTML = takeoff;
+	console.log(takeoff);
+	document.getElementById("TakeOff"+x).innerHTML = takeoff[0].name;
 	takeOffList.push(takeoff);
 	x++;
  }
@@ -233,7 +262,7 @@ function nextPlane() {
 	else
 		i++;
 	currentPlane = incomingList[i];
-	document.getElementById("CurrentPlane").innerHTML = incomingList[i];
+	document.getElementById("CurrentPlane").innerHTML = incomingList[i].name;
 }
 ]]></script>
 </svg>
