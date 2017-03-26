@@ -1,23 +1,312 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" name="viewport" content="width=device-width">
-<title>Aaron's cool page of stuff</title>
-</head>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Plane Whisperer</title>
+		<meta name="description" content="A simpler way to discover the basics of an Air Traffic Controller's day-to-day job" />
+		<meta name="keywords" content="air, traffic, control, air traffic control, atc, basics, job" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-<body style="margin: 0px;">
-This is a thing. Here is text. Hello
-<br></br>
-There should be a stream in the background that is playing atc audio
-<br></br>
-<p>Here is an airport:
-<br></br>
-<object type="image/svg+xml" data="MainScreen.svg" width="960" height="560" border="1"></object>
+		<!-- Bootstrap -->
+		<script src="js/modernizr.custom.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/jquery.fancybox.css" rel="stylesheet">
+		<link href="css/flickity.css" rel="stylesheet" >
+		<link href="css/animate.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/queries.css" rel="stylesheet">
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<section class="hero">
+				<div class="texture-overlay"></div>
+				<div class="container">
+					<div class="row nav-wrapper">
+						<div class="col-md-6 col-sm-6 col-xs-6 text-left">
+							
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+							<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+						</div>
+					</div>
+					<div class="row hero-content">
+						<div class="col-md-12">
+							<h1 class="animated fadeInDown">Plane Whisperer</h1>
+							<h3 class="animated fadeInDown">Learn the basics for Air Traffic Control</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+		<section class="features-list" id="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-md-3 feature-1 wp2 delay -0.5s">
+							</div>
+							<div class="col-md-6 feature-3 wp2 delay-1s">
+								<h1>About the Project</h1>
+								<p>The project Plane Whisperer was created at MHacks 9 at University of Michigan. 
+									It is directed towards people who may have an interest in air traffic control,
+									but do not know where to start. Similarly to the "Hello, World" program written
+									in most programming languages, this team seeks to easily introduce the basic 
+									interworkings of air traffic control programs to beginners. Please, take a look 
+									around the site, learn a little, and enjoy the interactive game below.</p>
+							</div>
 
-</p>
-</body>
-<video autoplay="" name="">
-<source src="http://s1.ord.liveatc.net/katl_atis_arr" type="audio/mpeg">
-</video>
-
+						</div>
+					</div>
+				</div>
+			</section>
+		<section class="video">
+			<div class="container" id="video">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1><a href="https://www.youtube.com/embed/TkYZKqmxaro?autoplay=1&wmode=opaque&fs=1" class="youtube-media"><i class="fa fa-play-circle-o"></i> Watch our Demo</a></h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="features-intro" id="desc">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 nopadding features-intro-img">
+						<div class="features-bg">
+						</div>
+					</div>
+					<div class="col-md-6 nopadding">
+						<div class="features-slider">
+								<ul class="slides" id="featuresSlider">
+									<li>
+										<h1>Benefits</h1>
+										<p>Save the average salary being above $120,000, an air traffic controller has many other benefits. 
+										   Some of said benefits include having the benefits package of a Federal employee, on-site training, 
+										   on-site healthcare and daycare, and paid vacation days.</p>
+									</li>
+									<li>
+										<h1>Duties</h1>
+										<p>The interactive game below mainly shows the basic idea of handling incoming and outgoing air traffic. 
+										   However, air traffic controllers have many other responsibilities, ranging from managing and 
+										   communicating with pilots, providing information in regards to weather and conditions, and monitoring
+										   all movement with computers and radars.</p>
+									</li>
+									<li>
+										<h1>Requirements</h1>
+										<p>Becoming an air traffic controller is a long but relatively easy process. One simply needs to have the 
+										   proper experience or education, pass medical and background checks, and achieve qualifying scores on the
+										   FAA and AT-SAT tests. Furthermore, since the training is longer than most careers and the job can be stressful
+										   at times, the latest one can start the process is at the age of 30.</p>
+									</li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="showcase" id="proj">
+			<div class="showcase-wrap">
+				<div class="container">
+					<div class="row">
+						<div>
+							<object type="image/svg+xml" data="img/screen.svg"  height="560" width="960"></object>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="screenshots-intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Meet the Crew that Piloted this Project!</h1>
+						<p>For more info on the individual contributions to the project, please check out the repository here! &nbsp; <a href="https://github.com/aaron97neu/ATCServer" target="_blank"><i class="fa fa-file-code-o"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="screenshots" id="imgs">
+			<div class="container-fluid">
+				<div class="row">
+					<ul class="grid">
+						<li>
+							<figure>
+								<img src="img/01-screenshot.jpg" alt="Screenshot 01">
+								<figcaption>
+								<div class="caption-content">
+									<a href="img/large/01.jpg" class="single_image">
+										<i class="fa fa-search"></i><br>
+										<p>Back-end Developer</p>
+									</a>
+								</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/02-screenshot.jpg" alt="Screenshot 01">
+								<figcaption>
+								<div class="caption-content">
+									<a href="img/large/02.jpg" class="single_image">
+										<i class="fa fa-search"></i><br>
+										<p>Illustrator</p>
+									</a>
+								</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/03-screenshot.jpg" alt="Screenshot 01">
+								<figcaption>
+								<div class="caption-content">
+									<a href="img/large/03.jpg" class="single_image">
+										<i class="fa fa-search"></i><br>
+										<p>Front-end Developer</p>
+									</a>
+								</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/04-screenshot.jpg" alt="Screenshot 01">
+								<figcaption>
+								<div class="caption-content">
+									<a href="img/large/04.jpg" class="single_image">
+										<i class="fa fa-search"></i><br>
+										<p>Javascript Developer</p>
+									</a>
+								</div>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+				<div class="row">
+					<ul class="grid">
+						<li>
+							<figure>
+								<img src="img/05-screenshot.jpg" alt="Screenshot 01">
+								<figcaption>
+								<div class="caption-content">
+									<a href="img/large/05.jpg" class="single_image">
+										<i class="fa fa-search"></i><br>
+										<p>Aaron Neustedter</p>
+									</a>
+								</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/06-screenshot.jpg" alt="Screenshot 01">
+								<figcaption>
+								<div class="caption-content">
+									<a href="img/large/06.jpg" class="single_image">
+										<i class="fa fa-search"></i><br>
+										<p>Ryan Sullivan</p>
+									</a>
+								</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/07-screenshot.jpg" alt="Screenshot 01">
+								<figcaption>
+								<div class="caption-content">
+									<a href="img/large/07.jpg" class="single_image">
+										<i class="fa fa-search"></i><br>
+										<p>Shawn Montgomery</p>
+									</a>
+								</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="img/08-screenshot.jpg" alt="Screenshot 01">
+								<figcaption>
+								<div class="caption-content">
+									<a href="img/large/08.jpg" class="single_image">
+										<i class="fa fa-search"></i><br>
+										<p>Jordan Buckmaster</p>
+									</a>
+								</div>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h1 class="footer-logo">
+						<img src="img/plane.png" alt="">
+						</h1>
+					</div>
+					<div class="col-md-7">
+						<ul class="footer-nav">
+							<li><a href="#about">About</a></li>
+							<li><a href="#video">Demo</a></li>
+							<li><a href="#desc">Job</a></li>
+							<li><a href="#proj">Project</a></li>
+							<li><a href="#imgs">Pilots</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="overlay overlay-boxify">
+			<nav>
+				<ul>
+					<li><a href="#about"><i class="fa fa-folder-open-o"></i>About</a></li>
+					<li><a href="#video"><i class="fa fa-film"></i>Demo</a></li>
+					<li><a href="#desc"> <i class="fa fa-plane"></i>Job</a></li>
+				</ul>
+				<ul>
+					<li><a href="#proj"><i class="fa fa-cogs"></i>Project</a></li>
+					<li><a href="#imgs"><i class="fa fa-photo"></i>Pilots</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/min/toucheffects-min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/retina.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/min/scripts-min.js"></script>
+		<!-- Google Analytics -->
+		<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+	</body>
 </html>
