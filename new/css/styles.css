@@ -597,7 +597,7 @@ section.video h1 {
     font-size: 20px;
 }
 section.video {
-    padding: 60px 0;
+    padding: 0 0 50px 0;
 	/* color of background by video */
     background-color: #f6f7f9;
 }
@@ -695,7 +695,7 @@ Features Slider
 Features List
 ========================================================================== */
 .features-list {
-    padding: 130px 0;
+    padding: 130px 0 50px 0;
 	background-color: #f6f7f9;
 }
 .features-list h1 {
@@ -768,6 +768,12 @@ Screenshots Intro
 	/* color of intro text */
     color: #325271;
 }
+
+.screenshots-intro i {
+	font-size: 35px;
+	color: #325271;
+}
+
 
 /* ==========================================================================
 Screenshots
