@@ -838,11 +838,12 @@ Screenshots
     opacity: 1
 }
 .screenshots figcaption i {
-    font-size: 35px
+    font-size: 20px
 }
 .screenshots figcaption p {
     margin-bottom: 0;
     text-transform: uppercase;
+	font-size: 10px;
     font-weight: 400;
 }
 .screenshots figcaption .caption-content {
@@ -868,7 +869,7 @@ Screenshots
 Footer
 ========================================================================== */
 footer {
-    padding: 100px 0
+    padding: 75px 0
 }
 
 footer img {
