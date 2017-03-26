@@ -112,8 +112,6 @@
 			<text id="Incoming8" transform="matrix(1 0 0 1 859.8835	378.0)" class="st4 st5"></text>
 			<text id="Incoming9" transform="matrix(1 0 0 1 859.8835	408.0)" class="st4 st5"></text>
 			<text id="Incoming10" transform="matrix(1 0 0 1 859.8835 438.0)" class="st4 st5"></text>
-			<ellipse id="XMLID_63_" onclick="clearLanding();" class="st3" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
-			<ellipse id="XMLID_64_" onclick="clearTakeOff();" class="st3" cx="553.2" cy="151.2" rx="11.5" ry="11.2"/>
 			<script  type="text/javascript">
 				<![CDATA[
 
