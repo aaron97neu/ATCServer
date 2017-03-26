@@ -93,6 +93,25 @@
 			<text id="CurrentPlane" transform="matrix(1 0 0 1 517.9805 437)" class="st4 st5">M9</text>
 			<path id="XMLID_61_" class="st3" d="M551.3,329.5"/>
 			<path id="XMLID_62_" class="st3" d="M555.5,315"/>
+			<text id="Load0" transform="matrix(1 0 0 1 760 138.0)" class="st4 st5"></text>
+			<text id="Load1" transform="matrix(1 0 0 1 760 168.0)" class="st4 st5"></text>
+			<text id="Load2" transform="matrix(1 0 0 1 760 198.0)" class="st4 st5"></text>
+			<text id="Load3" transform="matrix(1 0 0 1 760 228.0)" class="st4 st5"></text>
+			<text id="TakeOff0" transform="matrix(1 0 0 1 650 138.0)" class="st4 st5"></text>
+			<text id="TakeOff1" transform="matrix(1 0 0 1 650 168.0)" class="st4 st5"></text>
+			<text id="TakeOff2" transform="matrix(1 0 0 1 650 198.0)" class="st4 st5"></text>
+			<text id="TakeOff3" transform="matrix(1 0 0 1 650 228.0)" class="st4 st5"></text>
+			<text id="Incoming0" transform="matrix(1 0 0 1 859.8835	138.0)" class="st4 st5"></text>
+			<text id="Incoming1" transform="matrix(1 0 0 1 859.8835	168.0)" class="st4 st5"></text>
+			<text id="Incoming2" transform="matrix(1 0 0 1 859.8835	198.0)" class="st4 st5"></text>
+			<text id="Incoming3" transform="matrix(1 0 0 1 859.8835	228.0)" class="st4 st5"></text>
+			<text id="Incoming4" transform="matrix(1 0 0 1 859.8835	258.0)" class="st4 st5"></text>
+			<text id="Incoming5" transform="matrix(1 0 0 1 859.8835	288.0)" class="st4 st5"></text>
+			<text id="Incoming6" transform="matrix(1 0 0 1 859.8835	318.0)" class="st4 st5"></text>
+			<text id="Incoming7" transform="matrix(1 0 0 1 859.8835	348.0)" class="st4 st5"></text>
+			<text id="Incoming8" transform="matrix(1 0 0 1 859.8835	378.0)" class="st4 st5"></text>
+			<text id="Incoming9" transform="matrix(1 0 0 1 859.8835	408.0)" class="st4 st5"></text>
+			<text id="Incoming10" transform="matrix(1 0 0 1 859.8835 438.0)" class="st4 st5"></text>
 			<ellipse id="XMLID_63_" onclick="clearLanding();" class="st3" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
 			<ellipse id="XMLID_64_" onclick="clearTakeOff();" class="st3" cx="553.2" cy="151.2" rx="11.5" ry="11.2"/>
 			<script  type="text/javascript">
