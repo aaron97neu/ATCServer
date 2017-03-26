@@ -738,8 +738,6 @@ Showcase
 .showcase object {
 	position: relative;
 	text-align: center;
-    height: 560px;
-	width: 960px;
 	display: block;
 	margin: auto;
 }
