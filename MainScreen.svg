@@ -85,7 +85,7 @@
 			<line class="st9" x1="608.5" y1="259.2" x2="827.5" y2="259.2"/>
 		</g>
 		<g id="Var_Text">
-			<!--<text id="Message0" transform="matrix(1 0 0 1 612.5469 272.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message0" transform="matrix(1 0 0 1 612.5469 272.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
 			<text id="Message1" transform="matrix(1 0 0 1 612.5469 387.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
 			<text id="Message2" transform="matrix(1 0 0 1 612.5469 402.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
 			<text id="Message3" transform="matrix(1 0 0 1 612.5469 417.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
@@ -94,7 +94,7 @@
 			<text id="Message6" transform="matrix(1 0 0 1 612.5469 462.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
 			<text id="Message7" transform="matrix(1 0 0 1 612.5469 477.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
 			<text id="Message8" transform="matrix(1 0 0 1 612.5469 492.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
-			<text id="Message9" transform="matrix(1 0 0 1 612.5469 507.3877)" class="st4 st10">M9 is seeking clearance to land!</text>-->
+			<text id="Message9" transform="matrix(1 0 0 1 612.5469 507.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
 			<path id="XMLID_47_" class="st3" d="M551,331.9"/>
 			<path id="XMLID_46_" class="st3" d="M555.5,315"/>
 			<ellipse id="XMLID_43_" onclick="clearLanding();" class="st3" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
