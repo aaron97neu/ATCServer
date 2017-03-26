@@ -86,7 +86,7 @@
 			<line class="st9" x1="608.5" y1="179.7" x2="827.5" y2="179.7"/>
 		</g>
 		<g id="Buttons_1_">
-			<ellipse id="XMLID_33_" onclick="clearLanding();" class="st11" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
+			<ellipse id="XMLID_33_" onclick="clearLanding();start();" class="st11" cx="553.2" cy="202.2" rx="11.5" ry="11.2"/>
 			<ellipse id="XMLID_50_" onclick="clearTakeOff();" class="st11" cx="553.2" cy="151.2" rx="11.5" ry="11.2"/>
 			<g id="XMLID_65_">
 				<polyline id="XMLID_67_" onclick="nextPlane();" class="st11" points="560.2,335.9 526.3,335.9 526.3,318.8 560.2,318.8 				"/>
@@ -95,7 +95,7 @@
 			</g>
 		</g>
 		<g id="Var_Text">
-			<text id="Message0" transform="matrix(1 0 0 1 612.5469 200.3877)" class="st4 st10">M9 is seeking clearance to land!</text>
+			<text id="Message0" transform="matrix(1 0 0 1 612.5469 200.3877)" class="st4 st10"></text>
 			<text id="Message1" transform="matrix(1 0 0 1 612.5469 225.3877)" class="st4 st10"></text>
 			<text id="Message2" transform="matrix(1 0 0 1 612.5469 250.3877)" class="st4 st10"></text>
 			<text id="Message3" transform="matrix(1 0 0 1 612.5469 275.3877)" class="st4 st10"></text>
@@ -130,11 +130,11 @@
 			<text id="Incoming9" color="#000" transform="matrix(1 0 0 1 840.8835	408.0)" class="st4 st5"></text>
 			<text id="Error" transform="matrix(1 0 0 1 612.5469 445.3877)" class="st4 st10"></text>
 			<text id ="GameOver" transform="matrix(1 0 0 1 657.9296 243.5)"></text>
+			<text id = "Start" onclick="start();" transform="matrix(1 0 0 1 645 243)"><tspan x="0" y="0" class="st11 st12">Press to Start</tspan></text>
 			<!--<tspan x="0" y="0" class="st11 st12">Game Over! </tspan><tspan x="-119.9" y="30.8" class="st11 st12">Too many planes needed direction</tspan>-->
 			<script type="text/javascript">
 				<![CDATA[
 				var time;
-				var colorTimer = setInterval(colors, 5);
 				var i = 0;
 				var x = 0;
 				var y = 0;
@@ -144,24 +144,19 @@
 				
 				function start() {
 					time = setInterval(update, 1000);
+					document.getElementById("Start").innerHTML= "";
+					for(j = 0; j < incomingList.length; j++) {
+						document.getElementById("Incoming"+j).innerHTML = incomingList[j].name;
+					}
+					document.getElementById("Message0").innerHTML = "M9 is seeking clearance to land!";
+					addPlane();
 				}
-				
+			
 				var takeOffList = [];
 				var landList = [];
-				for(j = 0; j < incomingList.length; j++) {
-					document.getElementById("Incoming"+j).innerHTML = incomingList[j].name;
-				}
+			
 				var names = ["Delta", "American", "United", "JetBlue", "Southwest", "Frontier", "Hack", "Alaska", "Spirit"];
-				function colors() {
-					for(var l = 0; l < incomingList.length; l++) {
-						if(l == i) {
-							document.getElementById("Incoming"+l).color = "#ff8717";
-						} else {
-							document.getElementById("Incoming"+l).color = "#000";
-						}
-							
-					}
-				}
+			
 				function addPlane() {
 					if(incomingList.length < 10) {
 						var name = names[Math.floor(Math.random() * names.length)];
@@ -189,7 +184,6 @@
 					}
 				}
 
-				addPlane();
 
 				function lose() {
 					clearInterval(time);
