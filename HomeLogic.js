@@ -49,6 +49,7 @@ function sleep(ms) {
 
 var homeSVG = document.getElementById("Home");
 var gameSVG = document.getElementById("Game_Group");
+//var gameSVG = $("#Game_Group");
 gameSVG.setAttribute("visibility", "hidden");
 var textBoxes = document.querySelectorAll('.TextBox');
 var textBox1 = textBoxes[0];
@@ -86,6 +87,8 @@ textBox1.addEventListener('click', async function() //start listening to clicks 
                 { 
                     //display new screen
                     gameSVG.setAttribute("visibility", "visible");
+                    homeSVG.setAttribute("visibility", "hidden");
+
                 }, false);
             }, false);
             startC2C();
