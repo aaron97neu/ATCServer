@@ -542,14 +542,14 @@ Hero
 }
 .hero h1 {
     margin: 200px 0 45px 0;
-    font-weight: 450;
-    font-size: 75px;
+    font-weight: 600;
+    font-size: 80px;
 	
 }
 
 .hero h3 {
 	margin: 0px 0 45px 0;
-	font-weight: 450;
+	font-weight: 600;
 	font-size: 40px;
 }
 .hero h1 span {
