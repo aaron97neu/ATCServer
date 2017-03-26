@@ -5,7 +5,7 @@ function playclip() {
 }
 
 function startGame() {
-	var obj = document.getElementsByTagName("object")[0];
+	var obj = document.getElementsById("Var_Text")[0];
 	obj.start();
 }
 
